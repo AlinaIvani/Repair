@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xmlns version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="70.0" prefWidth="702.0" style="-fx-background-color: #FFA577;" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="7.0" layoutY="5.0" prefHeight="60.0" prefWidth="686.0" text="Материалы для ремонта квартиры" textFill="#896e69" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="5.0">
+               <font>
+                  <Font name="Felix Titling" size="43.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="paintButton" layoutX="95.0" layoutY="123.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="165.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Краска" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/paint.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="puttyButton" layoutX="267.0" layoutY="123.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="165.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Шпатлевка" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/putty.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="199.0" layoutY="71.0" prefHeight="48.0" prefWidth="302.0" text="Что необходимо расчитать?" textAlignment="CENTER" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font name="Felix Titling" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="plasterButton" layoutX="439.0" layoutY="123.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="165.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Штукатурка" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/plaster.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="glueButton" layoutX="238.0" layoutY="213.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="223.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Обойный клей" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/glue_w.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="wallButton" layoutX="469.0" layoutY="213.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="223.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Обои" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/wallpaper.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="tileButton" layoutX="6.0" layoutY="213.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="223.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Потолочная плитка" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/tile.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="linoleumButton" layoutX="350.0" layoutY="303.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="223.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Линолеум" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/linoleum.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="laminateButton" layoutX="118.0" layoutY="303.0" mnemonicParsing="false" prefHeight="83.0" prefWidth="223.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Ламинат" textFill="#896e69">
+         <graphic>
+            <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/laminate.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Felix Titling" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

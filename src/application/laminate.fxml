@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.laminateController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="70.0" prefWidth="702.0" style="-fx-background-color: #FFA577;" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="96.0" layoutY="5.0" prefHeight="60.0" prefWidth="508.0" text="РАСЧЕТ РАСХОДА ШПАТЛЕВКИ" textFill="#896e69" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="96.0" AnchorPane.rightAnchor="96.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Felix Titling" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="16.0" layoutY="97.0" prefHeight="28.0" prefWidth="288.0" text="Ширина поверхности в метрах" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldWidthPU" layoutX="327.0" layoutY="97.0" prefHeight="28.0" prefWidth="149.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <Label layoutX="16.0" layoutY="131.0" prefHeight="28.0" prefWidth="278.0" text="Длина поверхности в метрах" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="165.0" prefHeight="28.0" prefWidth="278.0" text="Необходимая толщина (мм)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="200.0" prefHeight="28.0" prefWidth="307.0" text="Расход (метр в квадрате)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="16.0" layoutY="234.0" prefHeight="28.0" prefWidth="253.0" text="Вес упаковки (кг)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="494.0" layoutY="161.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #FFA577; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="LabelResultPU" layoutX="13.0" layoutY="5.0" prefHeight="28.0" prefWidth="175.0" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Felix Titling" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="545.0" layoutY="97.0" prefHeight="28.0" prefWidth="98.0" text="Результат" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="504.0" layoutY="131.0" prefHeight="28.0" prefWidth="182.0" text="Расход шпатлевки (кг)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="-5.0" endY="115.0" layoutX="490.0" layoutY="283.0" startX="-5.0" startY="-214.0" stroke="#ffa577" />
+            <TextField fx:id="TextFieldLenghtPU" layoutX="327.0" layoutY="131.0" prefHeight="28.0" prefWidth="149.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldExpPU" layoutX="327.0" layoutY="200.0" prefHeight="28.0" prefWidth="149.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldWeightPU" layoutX="327.0" layoutY="234.0" prefHeight="28.0" prefWidth="149.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldThickPU" layoutX="327.0" layoutY="166.0" prefHeight="28.0" prefWidth="149.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <Label layoutX="507.0" layoutY="200.0" prefHeight="28.0" prefWidth="175.0" text="Потребуется мешков" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="494.0" layoutY="229.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #FFA577; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="LabelResult2PU" layoutX="13.0" layoutY="5.0" prefHeight="28.0" prefWidth="175.0" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Felix Titling" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="526.0" prefWidth="700.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577;">
+         <children>
+            <AnchorPane layoutX="-1.0" layoutY="1.0" prefHeight="70.0" prefWidth="702.0" style="-fx-background-color: #FFA577;" AnchorPane.leftAnchor="-2.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="109.0" layoutY="5.0" prefHeight="60.0" prefWidth="482.0" text="РАСЧЕТ РАСХОДА ЛАМИНАТА" textFill="#896e69" textOverrun="CENTER_ELLIPSIS" AnchorPane.leftAnchor="109.0" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Felix Titling" size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Button fx:id="ResultButtonLA" layoutX="520.0" layoutY="462.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Рассчитать" textFill="#896e69">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="12.0" layoutY="83.0" prefHeight="28.0" prefWidth="288.0" text="Ширина комнаты в метрах" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldWidthLA" layoutX="287.0" layoutY="83.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <Label layoutX="12.0" layoutY="117.0" prefHeight="28.0" prefWidth="278.0" text="Длина комнаты в метрах" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="12.0" layoutY="152.0" prefHeight="28.0" prefWidth="278.0" text="Способ укладки" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="185.0" prefHeight="28.0" prefWidth="307.0" text="Отступ от стен (мм)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="254.0" prefHeight="28.0" prefWidth="253.0" text="Длина панели (мм)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="494.0" layoutY="139.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #FFA577; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="LabelResultLA" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="5.0" prefHeight="28.0" prefWidth="175.0" textAlignment="CENTER" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Felix Titling" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="545.0" layoutY="83.0" prefHeight="28.0" prefWidth="98.0" text="Результат" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="510.0" layoutY="111.0" prefHeight="28.0" prefWidth="168.0" text="Количество панелей" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="17.0" />
+               </font>
+            </Label>
+            <Line endX="-5.0" endY="243.0" layoutX="490.0" layoutY="283.0" startX="-5.0" startY="-214.0" stroke="#ffa577" />
+            <Button fx:id="BackButtonLA" layoutX="9.0" layoutY="462.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="295.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Вернуться в главное меню" textFill="#896e69">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="TextFieldLenghtLA" layoutX="287.0" layoutY="117.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldIndent" layoutX="286.0" layoutY="186.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldWidthL1A" layoutX="286.0" layoutY="221.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="TextFieldLenght1LA" layoutX="286.0" layoutY="254.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <Label layoutX="14.0" layoutY="220.0" prefHeight="28.0" prefWidth="253.0" text="Ширина панели (мм)" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="14.0" layoutY="289.0" prefHeight="28.0" prefWidth="270.0" text="Количество штук в упаковке" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="505.0" layoutY="180.0" prefHeight="28.0" prefWidth="182.0" text="Потребуется упаковок" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="496.0" layoutY="208.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #FFA577; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="LabelResult1LA" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="5.0" prefHeight="28.0" prefWidth="175.0" textAlignment="CENTER" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Felix Titling" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextField fx:id="TextFieldQuaPL" layoutX="286.0" layoutY="289.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="CheckBox1" layoutX="287.0" layoutY="152.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="83.0" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;" text="По прямой">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="CheckBox2" layoutX="378.0" layoutY="152.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="98.0" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;" text="По диагонали">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </CheckBox>
+            <Label layoutX="553.0" layoutY="249.0" prefHeight="28.0" prefWidth="83.0" text="Стоимость" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="17.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="496.0" layoutY="279.0" prefHeight="38.0" prefWidth="200.0" style="-fx-background-color: #FFA577; -fx-background-radius: 30;">
+               <children>
+                  <Label fx:id="LabelResult2LA" alignment="CENTER" contentDisplay="CENTER" layoutX="13.0" layoutY="5.0" prefHeight="28.0" prefWidth="175.0" textAlignment="CENTER" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+                     <font>
+                        <Font name="Felix Titling" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="14.0" layoutY="326.0" prefHeight="28.0" prefWidth="270.0" text="Стоимость одной упаковки" textFill="#896e69" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="TextFieldCosPL" layoutX="287.0" layoutY="326.0" prefHeight="28.0" prefWidth="190.0" promptText="Введите" style="-fx-border-color: #FFA577; -fx-border-radius: 10; -fx-background-radius: 10;">
+               <font>
+                  <Font name="Felix Titling" size="11.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="img" fitHeight="132.0" fitWidth="139.0" layoutX="527.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true" />
+            <Button fx:id="ButtonSave" layoutX="9.0" layoutY="396.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="206.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Сохранить данные" textFill="#896e69">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="ButtonOut" layoutX="282.0" layoutY="396.0" mnemonicParsing="false" prefHeight="48.0" prefWidth="200.0" style="-fx-background-color: #F9F9FF; -fx-border-color: #FFA577; -fx-border-radius: 30;" text="Вывести данные" textFill="#896e69">
+               <font>
+                  <Font name="Felix Titling" size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
